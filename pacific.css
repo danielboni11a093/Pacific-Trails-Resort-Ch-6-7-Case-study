@@ -1,0 +1,167 @@
+* { box-sizing: border-box;}
+body{
+    height:auto;
+    color: #666666;
+    font-family: Verdana, Arial, sans-serif;
+    background-size: 1000px 1000px;
+    margin: 0;
+    background: linear-gradient(#FFFFFF,#90C7E3);
+
+}
+
+
+header{
+    background-color: #002171;
+    padding: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: sans-serif;
+}
+header a{text-decoration: none;}
+header a:link{color:#FFFFFF;}
+header a:visited{color: #FFFFFF}
+header a:hover{color: #90c7e3;}
+
+h1{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+main{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+h2{
+    color: #1976D2;
+    font-family: sans-serif;
+}
+h3{
+    font-family: Georgia, sans-serif;
+}
+
+#C1, #C2, #C3 {
+    color: #002171;
+    font-weight: bold;
+}
+.resort {
+    color: #1976D2;
+    font-size: 1.2em;
+}
+
+#wrapper {
+    background-color: #FFFFFF;
+    color: #000000;
+
+}
+
+
+nav{
+    background-color: #FFFFFF;
+    font-size: 1.2em;
+    color:#FFFFFF;
+    text-align: center;
+
+}
+nav a{text-decoration: none;}
+nav a:link{color: #5c7fa3;}
+nav a:visited{color: #344873;}
+nav a:hover{color: #a52a2a;}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0em;
+    flex-direction: column;
+}
+nav li{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: 1px solid #666666;
+}
+footer{
+    font-size: .70em;
+    background-color: #FFFFFF;
+    font-style: italic;
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: 1px;
+}
+section{
+    padding-left: .5em;
+    padding-right: .5em;
+}
+#coasthero{
+    height: 300px;
+    background-image: url(pacific/coast.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+}
+    
+#yurthero{
+    height: 300px;
+    background-image: url(pacific/yurt.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+
+}
+#trailhero{
+    height: 300px;
+    background-image: url(pacific/trail.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+}
+
+@media(min-width: 600px) {
+    h1{
+        font-size: 2em;
+        letter-spacing: .25em;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-right: 2em;
+    }
+    nav li{
+        width: 12em;
+        border-bottom: none;
+    }
+    section{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #flow{
+        display: flex;
+        flex-direction: row;
+    }
+    #mobile{display: none;}
+    #desktop{display: inline;}
+    #coasthero{background-size: 100% 100%}
+    #yurthero{background-size: 100% 100%}
+    #trailhero{background-size: 100% 100%}
+}
+
+@media (min-width: 1024px){
+    body{
+        background-image: linear-gradient(to bottom, #FFFFFF 20%, #90c7e3 60%, #ffffff 100%);
+    }
+    nav ul{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #wrapper{
+        margin: auto;
+        width: 80%;
+    }
+}
